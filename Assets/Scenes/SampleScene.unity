@@ -166,12 +166,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 15121493}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 93956e24144f18a4290bf3cc93bc4d83, type: 3}
+  m_Script: {fileID: 11500000, guid: 92db6ed64bd0b014bbc510c4b89c62dd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerSpeed: 10
-  LerpConstant: 1
-  jumpSpeed: 7
 --- !u!65 &15121496
 BoxCollider:
   m_ObjectHideFlags: 0
