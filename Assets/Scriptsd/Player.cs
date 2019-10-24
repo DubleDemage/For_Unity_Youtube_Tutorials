@@ -29,9 +29,11 @@ public class Player : MonoBehaviour
 
     void Movement()
     {
-        float h = Input.GetAxis("Horizontal");
-        Vector2 movement = new Vector2(h * playerSpeed, rb.velocity.y);
-        rb.velocity = Vector2.Lerp(rb.velocity, movement, LerpConstant);
+     
+         float h = Input.GetAxis("Horizontal");
+         Vector2 movement = new Vector2(h * playerSpeed, rb.velocity.y);
+         rb.velocity = Vector2.Lerp(rb.velocity, movement, LerpConstant);
+        
     }
 
     void Jump()
