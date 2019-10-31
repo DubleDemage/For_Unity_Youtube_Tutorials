@@ -8,26 +8,36 @@ public class ButtonMovement : MonoBehaviour
 
     Rigidbody rb;
 
-   
-
+    // Start is called before the first frame update
     void Start()
     {
         rb = GetComponent<Rigidbody>();
     }
 
-    void Update()
+    public void RightMove()
     {
-        
+        rb.velocity = new Vector2(playerSpeed, rb.velocity.y);
     }
 
-    public void MoveRight()
+    public void LeftMove()
     {
-        transform.position += Vector3.right * 15.0f * Time.deltaTime;
+        rb.velocity = new Vector2(-playerSpeed, rb.velocity.y);
     }
 
-    public void MoveLeft()
+    public void UpMove()
     {
-
-        transform.Translate(-playerSpeed * Time.deltaTime, 0, 0);
+        rb.velocity = new Vector2(rb.velocity.x, playerSpeed);
     }
+
+    public void DownMove()
+    {
+        rb.velocity = new Vector2(rb.velocity.x, -playerSpeed);
+    }
+
+    public void StopMove()
+    {
+        rb.velocity = new Vector2(0, 0);
+    }
+
+
 }
